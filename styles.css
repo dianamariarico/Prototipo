@@ -69,8 +69,12 @@ button {
 
 /* Media Query para pantallas grandes */
 @media (min-width: 601px) {
-    main {
-        width: 40%; /* Ajustar ancho en pantallas grandes */
-        margin: 0 auto; /* Centrar el contenido */
-    }
+   main {
+    display: flex;                  /* Activa Flexbox */
+    flex-direction: column;        /* Alinea los elementos en columna */
+    align-items: center;           /* Centra horizontalmente los elementos */
+    justify-content: center;       /* Centra verticalmente los elementos */
+    padding: 20px;                 /* Añade un poco de espacio alrededor */
+}
+
 }

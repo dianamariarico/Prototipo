@@ -1,5 +1,4 @@
-javascript
-Copiar código
+
 document.getElementById('loginButton').addEventListener('click', function() {
     alert('Iniciar sesión');
 });
