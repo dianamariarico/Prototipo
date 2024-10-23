@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Usar min-height para asegurar que ocupe toda la altura */
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    width: 60%; /* Ajusta el tamaño de la imagen */
+    max-width: 150px; /* Tamaño máximo de la imagen */
+    margin: 20px 0;
+}
+
+.input-field {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%; /* Ancho del 80% */
+    max-width: 400px; /* Ancho máximo */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 80%; /* Ancho del 80% */
+    max-width: 400px; /* Ancho máximo */
+    cursor: pointer;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px; /* Tamaño de fuente ajustado */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2em; /* Ajustar tamaño de texto en cabecera */
+    }
+
+    .logo {
+        width: 80%; /* Mayor tamaño en móviles */
+    }
+
+    .input-field, button {
+        width: 90%; /* Ancho mayor en móviles */
+    }
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 601px) {
+    main {
+        width: 40%; /* Ajustar ancho en pantallas grandes */
+        margin: 0 auto; /* Centrar el contenido */
+    }
+}
